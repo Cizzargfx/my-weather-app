@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Weather Conditions</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <div class="banner">
+        <video autoplay muted loop plays-inline class="video-background">
+            <source src="{{ url_for('static', filename='styles/vid2.mp4')}}" type="video/mp4" >
+        </video>
+        <div class="navbar">
+            <img class = 'logo' src="{{ url_for('static', filename='styles/mig.jpg')}}" >
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About me</a></li>
+
+            </ul>
+        
+
+        </div>
+        <div class="content">
+            <h1> Get Weather Conditions</h1>
+        </div>
+            <form action="/weather" class="content" >
+            <input type="text" name ="city" id="city"
+            placeholder="Enter a City"/>
+            <button type="submit">Submit</button>
+            </form>
+
+        
+    
+        <!-- Add more snowflakes if desired -->
+    </div>
+    
+</body>
+</html>
+

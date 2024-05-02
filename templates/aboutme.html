@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Link to external CSS file -->
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="banner">
+        <video autoplay muted loop plays-inline class="video-background">
+            <source src="{{ url_for('static', filename='styles/vid1.mp4')}}" type="video/mp4" >
+        </video>
+        <header>
+            <h1>About Me</h1>
+        </header>
+        
+        <section>
+            
+            <img src="{{ url_for('static', filename='styles/mig2.jpg')}}" alt="Your Photo">
+            <h2>Hello, I'm Aliozor Chidindu Micheal</h2>
+            <p>
+                Reflecting on the completion of a six-month IT internship, one might feel a profound sense of accomplishment and joy. The journey through the realms of Python, Flask, and Selenium has been both challenging and rewarding. Here’s a short text that encapsulates such emotions:
+
+    Celebrating Six Months of Growth and Learning
+
+    As I look back on the past six months of my IT internship, my heart swells with pride and happiness. It has been a journey marked by continuous learning and personal development. Diving into the depths of Python, I’ve unraveled the elegance of its syntax and the power of its libraries. Flask has opened a gateway to web development, teaching me the intricacies of server-side logic and route handling. Selenium, the tool that breathes life into web automation, has shown me the thrill of controlling the web dynamically.
+            </p>
+            <p></p>
+            <p>
+                This experience has been more than just an internship—it has been a transformative chapter in my life, shaping me into a confident and skilled IT professional.
+
+This text celebrates the knowledge and experience gained, highlighting the emotional aspect of completing such a significant milestone. It’s a blend of technical achievement and personal growth, which is often the essence of completing an intensive learning period like an IT internship. 🎉
+            </p>
+        </section>
+        <footer>
+            <p>Connect with me on [Social Media Links]</p>
+        </footer>
+    </div>
+</body>
